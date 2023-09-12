@@ -365,7 +365,7 @@ function convertArrayToObj(arr) {
       return `У масиві є дубльований ключ: ${key}`
     }
     // Додаємо ключ та значення до об'єкта
-    newObj = { key: value }
+    newObj = { [key]: [value] }
     // Застосовуємо метод Object.fromEntries() для створення об'єкта
     Object.fromEntries(newObj)
   }
